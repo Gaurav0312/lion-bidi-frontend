@@ -36,3 +36,48 @@
     transform: rotate(360deg);
   }
 }
+
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+
+
+.product-image-gallery .main-image-container img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-image-gallery .main-image-container:hover img {
+  transform: scale(1.02);
+}
+
+.thumbnail-gallery::-webkit-scrollbar {
+  height: 4px;
+}
+
+.thumbnail-gallery::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 2px;
+}
+
+.thumbnail-gallery::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 2px;
+}
+
+.thumbnail-gallery::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
